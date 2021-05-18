@@ -26,7 +26,7 @@ const quoteDisplay = [
     "I don\'t want to take up all of your time.",
     "It\'s been great catching up with you!",
     "Thanks for the heads up, I\'ll definitely check out...",
-    "I loved talking to you, but I need to catch up with a few other people",
+    "I loved talking to you, but I need to catch up with a few other people.",
     "Do you know where the bathroom is?",
     "I need to get another drink.",
     "I need to respond to this message.",
@@ -48,12 +48,12 @@ const quoteDisplay = [
     "Seriously?",
     "I couldn\'t possibly comment.",
     "I\'d rather not get into it right now.",
-    "I'm not open to discussing that.",
+    "I\'m not open to discussing that.",
     "Why are you sharing this with me?",
     "Can I interrupt, because we still haven\'t discussed that new restaurant?",
     "Interesting, but I really wanted to hear your thoughts on the new Marvel movie.",
     "So what else is keeping your busy these days?",
-    "Wow. Do you know what I heard the other day?",
+    "Well, do you know what I heard the other day?",
     "I\'m not one to gossip.",
     "What I heard you say was: _____.",
     "What is your favorite stress-relieving activity?",
@@ -63,7 +63,8 @@ const quoteDisplay = [
     "I\'m sorry to interrupt, but I really have to run.",
     "Thanks for talking!",
     "What time is it?",
-    "I really shouldn\'t hold you longer, I know you have important things to do."
+    "I really shouldn\'t hold you longer, I know you have important things to do.",
+    "I\'d prefer not to."
 ]
 
 function changeQuote() {
@@ -75,8 +76,8 @@ function changeQuote() {
 
 changeQuote();
 
-// Background color randomizer
-const button = document.getElementById("button-change-color");
+// Background image randomizer
+const button = document.getElementById("button-change-background");
 
 function modifyBackground() {
     const x = Math.floor(Math.random() * 256);
@@ -91,5 +92,7 @@ function modifyBackground() {
 modifyBackground();
 
 // Event listener on page
-button.addEventListener("click", modifyBackground);
-button.addEventListener("click", changeQuote);
+button.addEventListener("click",() => {
+    modifyBackground();
+    changeQuote();
+});
