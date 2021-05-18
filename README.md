@@ -6,6 +6,8 @@
 * [Setup](#setup)
 
 ## General info
+Have you ever been stuck in an awkward conversation? 
+
 This project features a simple button that generates one-liners to end a conversation.
 	
 ## Technologies
