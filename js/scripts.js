@@ -79,14 +79,22 @@ changeQuote();
 // Background image randomizer
 const button = document.getElementById("button-change-background");
 
+const images = {
+    1: {
+        imagePath: "images/flora1.jpg"
+    },
+    2: {
+        imagePath: "images/flora2.jpg"
+    },
+    3: {
+        imagePath: "images/flora3.jpg"
+    }
+};
+
 function modifyBackground() {
-    const x = Math.floor(Math.random() * 256);
-    const y = Math.floor(Math.random() * 256);
-    const z = Math.floor(Math.random() * 256);
-    const backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
-    console.log(backgroundColor);
-    
-    document.body.style.background = backgroundColor;
+    const randomizeImages = Math.floor(Math.random() * images.length) + 1;
+    console.log(randomizeImages);
+    document.body.style.background = randomizeImages;
 }
 
 modifyBackground();
