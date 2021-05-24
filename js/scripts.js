@@ -64,7 +64,8 @@ const quoteDisplay = [
     "Thanks for talking!",
     "What time is it?",
     "I really shouldn\'t hold you longer, I know you have important things to do.",
-    "I\'d prefer not to."
+    "I\'d prefer not to.",
+    "You\'re right."
 ]
 
 function changeQuote() {
