@@ -3,7 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Visit](#visit)
 
 ## General info
 Have you ever been stuck in an awkward conversation? 
@@ -11,10 +11,10 @@ Have you ever been stuck in an awkward conversation?
 This project features a simple button that generates one-liners to end a conversation.
 	
 ## Technologies
-Project is created with:
+Icewall Randomizer was created with:
 * HTML5
 * CSS3
 * JavaScript
 	
-## Setup
-To run this project, visit: 
+## Visit
+This project is in development and will be available soon.
